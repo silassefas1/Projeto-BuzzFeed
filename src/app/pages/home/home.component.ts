@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { QuizzComponent } from '../../components/quizz/quizz.component'; // Ajuste o caminho conforme necessário
 
 @Component({
@@ -7,6 +7,11 @@ import { QuizzComponent } from '../../components/quizz/quizz.component'; // Ajus
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
